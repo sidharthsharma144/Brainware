@@ -20,7 +20,7 @@ function App() {
       const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          "Authorization": `Bearer ${apiKey}`,
+          "Authorization": `Bearer ${VITE_OPENAI_API_KEY}`,
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
